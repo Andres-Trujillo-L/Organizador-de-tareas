@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de pendientes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+      body{
+        background-color: #d8c7c3;
+          font-family: "Playwrite GB S", cursive;
+          padding-top: 60px;
+      }
+
+      .container{
+          max-width: 600px;
+          margin: auto;
+          background-color: #ddd3d1;
+          -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0.21);
+          box-shadow: 2px 2px 13px -4px rgba(0, 0, 0.21);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: "Dancing Script", cursive;
+      }
+
+      a,
+      p {
+          color: #8c726d;
+      }
+
+      .barra-superior {
+          display: flex;
+          justify-content: space-between;
+          color: #ffffff;
+          padding: 10px;
+          border-radius: 5px 5px 0 0;
+          background: linear-gradient(90deg, #5ca694 0%, #498a7a 45%, #337565 100%);
+      }
+
+      .barra-superior a{
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+      }
+
+      .envoltorio-tarea {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          background-color: #ffffff;
+          border-top: 1px solid rgb(225, 225, 225);
+
+      }
+      .titulo-tarea {
+          display: flex;
+      }
+
+      .titulo-tarea a {
+          text-decoration: none;
+          color: #8c726d;
+          margin-left: 10px;
+      }
+
+      .icono-tarea-completa {
+          height: 20px;
+          width: 20px;
+          background-color: #32b999;
+          border-radius: 50px;
+      }
+
+      .icono-tarea-incompleta {
+          height: 20px;
+          width: 20px;
+          background-color: #cdeee6;
+          border-radius: 50px;
+      }
+      .enlace-eliminar {
+          text-decoration: none;
+          font-weight: 900;
+          color: #deaa96;
+          font-size: 22px;
+          line-height: 0;
+      }
+      #envoltorio-agregar-buscar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+      }
+      #enlace-agregar {
+          color: #deaa96;
+          text-decoration: none;
+          font-size: 42px;
+          text-shadow: 1px 1px #be8b78;
+      }
+      input[type=text],
+      input[type=password],
+      textarea {
+          border: 1px solid #be8b78;
+          border-radius: 5px;
+          padding: 10px;
+          width: 90%;
+      }
+      label {
+          padding-top: 10px !important;
+          display: block;
+      }
+      .boton {
+          border: 1px solid #be8b78;
+          background-color: #FAFAFA;
+          color: #be8b78;
+          padding: 10px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+      }
+      .cuerpo-tarjeta {
+          padding: 20px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+</body>
+</html>
